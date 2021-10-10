@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding:0;
+    font-family:fantasy;
+}
+
+body, html {
+    background-color: burlywood;
+  height: auto;
+  margin: 0;
+}
+
+.topnav {
+    padding: 15px;
+  overflow: hidden;
+  background-color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: burlywood;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .cata {
+  padding: 15px;
+}
+.topnav a.active {
+
+}
+.topnav .cata:hover { 
+    color: white;
+}
+.topnav a.highlight {
+  background-color: #4CAF50;
+  color: white;
+    border-radius: 5px;
+}
+.topnav a.highlight:hover {
+  background-color: #4CAF50;
+  color: white;
+     border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.topnav a {
+  background-color: #4CAF50; 
+  color: white;
+}
+.topnav .icon  {
+  display: none;
+    padding: 15px;
+}
+.topnav .icon:hover {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.10), 0 0px 0px 0 rgba(0,0,0,0.10);
+}
+.container {
+    background-color: black;
+  display: inline-block;
+  cursor: pointer;
+    padding: 15px;
+}
+.bar1, .bar2, .bar3 {
+  width: 24px;
+  height: 3px;
+  background-color: burlywood;
+    border-radius: 0px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1250px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .topnav a.highlight {
+        width: 100%;
+        float: none;
+    }
+}
+
+.load{
+    animation: slide 2s;
+}
+
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.bluebox{
+    background-color: #28c101;
+    width: 100%;
+}
+.content{
+    background-color: black;
+    color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.content img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+.principal{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.principal h1{
+    font-size: 45px;
+    color: navajowhite;
+}
+
+.top{
+    right: 0%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.principal a{
+    color: navajowhite;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+    opacity: .8;
+}
+.principal a:hover {
+    font-size: 21px;
+    opacity: 1;
+}
+
+.principal button:hover{
+    opacity: 1;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    width: 100%;   
+    height: 50px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .content img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .principal a{
+        font-size: 20px;
+    }
+    .principal a:hover{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .principal a{
+        font-size: 20px;
+    }
+    .principal a:hover{
+        font-size: 21px;
+    }
+}
+
+
+/* SIGN UP */
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: burlywood;
+    color: white;
+    opacity: 1;
+    border-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: burlywood;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float:left;
+  width: 40%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 50px;
+}
+
+.contactCenter{
+ padding: 0px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: burlywood;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 3px solid navajowhite;
+  width: 50%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .modal-content {
+     width: 80%;
+  }
+}
+
+.footer {
+   width: 100%;
+   background-color: wheat;
+   color: white;
+    margin: 0px;
+    border-top: 1px solid navajowhite;
+
+}
+
+.footer p1{
+    float:left;
+    opacity: 0.5;
+    padding: 15px;
+}
+
+.footer img{
+    width: 20px;
+    opacity: 0.7;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer img:hover{
+    opacity: 1;
+}
+
+.footerbtn:hover{
+    box-shadow: 10px 20px 20px 0 rgba(0,0,0,0.24), 0 20px 20px 0 rgba(0,0,0,0.19);
+}
+
+.footerbtn {
+    border: 0px;
+  background-color: black;
+  cursor: pointer;
+    float: right;
+    margin-top: 7px;
+}
+
+.footersocial {
+    padding: 0px 10px 0px 0px;
+    border: 0px;
+}
+
+@media screen and (max-width: 502px) {
+  .footer img{
+    width: 18px;
+    opacity: 0.7;
+    }
+    .footer p1{
+        font-size: 12px;
+    }
+}
+
+
+
+
+body {
+  margin: 0.2px;
+  font-family: fantasy;
+    height: auto;
+    background-color: black;
+}
+
+/************************ Navigation Bar ************************/
+
+.topnav {
+    padding: 15px;
+  overflow: hidden;
+  background-color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: burlywood;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .cata {
+  padding: 15px;
+}
+.topnav a.active {
+
+}
+.topnav .cata:hover { 
+    color: white;
+}
+.topnav a.highlight {
+  background-color: #4CAF50;
+  color: white;
+    border-radius: 5px;
+}
+.topnav a.highlight:hover {
+  background-color: #4CAF50;
+  color: white;
+     border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.topnav a {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon  {
+  display: none;
+    padding: 15px;
+}
+.topnav .icon:hover {
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.10), 0 0px 0px 0 rgba(0,0,0,0.10);
+}
+.container {
+    background-color: #4CAF50;
+  display: inline-block;
+  cursor: pointer;
+    padding: 15px;
+}
+.bar1, .bar2, .bar3 {
+  width: 24px;
+  height: 3px;
+  background-color: burlywood;
+    border-radius: 0px;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1250px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .topnav a.highlight {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+.title{
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid navajowhite;
+}
+
+
+
+table, th, td {
+    padding: 20px;
+  border: 1px solid burlywood;
+  border-collapse: collapse;
+}
+th, td {
+    color: burlywood;
+  padding: 20px;
+  text-align: left;
+}
+
+td {
+    background-color: black;
+  padding: 20px;
+  text-align: left;
+}
+
+.contactBtn{
+    font-family: fantasy;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    font-size: 15px;
+    width: 70%;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.contactBtn:hover{
+    font-family: fantasy;
+    background-color: white;
+    color: black;
+}
+
+.applyBtn{
+    font-family: fantasy;
+    background-color: burlywood;
+    color: black;
+    border-radius: 0px;
+    font-size: 15px;
+    width: 40%;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.applyBtn:hover{
+    font-size: 17px;
+    border-radius: 1px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+.row{
+    align-content: center;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.projBtn{
+    font-family: fantasy;;
+    background-color: black;
+    color: navajowhite;
+    border: 2px solid burlywood;
+    border-radius: 0px;
+    font-size: 15px;
+    width: 80%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.projBtn:hover{
+    background-color: burlywood;
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+
+
+.footer {
+   width: 100%;
+   background-color: wheat;
+   color: black;
+}
+
+.footer p1{
+    opacity: 0.5;
+    padding: 15px;
+}
+
+@media screen and (max-width: 502px) {
+  .footer img{
+    width: 18px;
+    opacity: 0.7;
+    }
+    .footer p1{
+        font-size: 12px;
+    }
+}

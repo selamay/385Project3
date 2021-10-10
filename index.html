@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoldLink</title>
+    <meta name="description" content="The Jungle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div class="slider"> 
+    <div class="load"> 
+    </div>
+    <div class="content">
+        <img src="img/GoldLink.jpg" alt="Gold Link" style="opacity: 50%;">
+        <div class="principal">
+            <h1><b>GOLDLINK</b></h1>
+            <br>
+                <a href="home.html">Home</a> 
+                <a href="music.html">Music</a> 
+                <a href="news.html">News</a>
+            <br>
+        </div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="register_user.php" method="post">
+            <div class="container">
+                <h1 style="color: burlywood;">Contact us</h1>
+                <br>
+                <hr>
+                <label for="name"><b style="color: white;">Name</b></label>
+                <input id="name" type="text" style="background-color: white;" placeholder="Enter Name" name="name" required>
+                <label for="email"><b style="color: white;">Email</b></label>
+                <input id="email" type="text" style="background-color: white;" placeholder="Enter Email" name="email" required>
+                <label for="phone"><b style="color: white;">Phone Number</b></label>
+                <input id="phone" type="text" style="background-color: white;" placeholder="Enter Phone Number" name="phone" required>
+                <br>
+                <p style="color: white;">Service are you interested in:</p>
+                  <input type="radio" style="color: white;" name="studio" value="Recording Studio"><b style="color: white;"> Recording Studio</b><br>
+                  <input type="radio" style="color: white;" name="studio" value="Photo Studio"><b style="color: white;"> Photo Studio</b><br>
+                  <input type="radio" style="color: white;" name="studio" value="Tech Studio"><b style="color: white;"> Tech Studio</b><br>
+                  <input type="radio" style="color: white;" name="studio" value="Event Studio"><b style="color: white;"> Event Management Studio</b><br>
+                  <input type="radio" style="color: white;" name="studio" value="The Park"><b style="color: white;"> The Park</b><br>
+                  <br>
+                <hr>
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Contact</button>
+                </div>
+                <br>
+                <p style="color: burlywood;">By contacting us, you agree to our <a href="#" style="color:navajowhite; text-decoration: underline;"><b>Terms & Privacy.</b></a></p>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>
